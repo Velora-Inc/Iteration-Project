@@ -349,3 +349,21 @@ fieldset {
   display: flex;
   margin-left: 2.8vw;
 }
+
+
+/*/main container*/
+
+.buttonContainer{
+  display: flex;
+  justify-content: right;
+  margin-top: 30px;
+  margin-right: 40px;
+}
+
+#nextButton{
+  min-width: 100px;
+}
+
+#previousButton{
+  margin-right: 8px;
+}
