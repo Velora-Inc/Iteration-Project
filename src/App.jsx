@@ -6,6 +6,7 @@ import MainContainer from './Containers/MainContainer';
 import MatrixContainer from './Containers/MatrixContainer'; // Make sure to import your new component
 // import Button from './components/Button.jsx';
 import { Next, Previous } from './components/Button.jsx';
+import CheckBox from '@mui/material/Checkbox';
 //src/components/Button.jsx
 
 const HomePage = () => {
@@ -23,9 +24,20 @@ const HomePage = () => {
         {/* <Button/> */}
       </div>
       <h1>Welcome to the Data Structure Tutor</h1>
-      <div id="pageLink"></div>
-      <div id="pageLink"></div>
-      <div id="pageLink"></div>
+      <div className='pageLinkStack'>
+        <div className="pageLink">
+          <div><CheckBox id="CheckBox"/></div>
+          <Link id='pageLinkText' to="/array"><div id='pageLinkText'>Array</div></Link>
+        </div>
+        <div className="pageLink">
+          <div><CheckBox/></div>
+          <Link id='pageLinkText' to="/matrix"><div id='pageLinkText'>Matrix</div></Link>
+        </div>
+        <div className="pageLink">
+          <div><CheckBox/></div>
+          <Link id='pageLinkText' to="/"><div>Object</div></Link>
+        </div>
+      </div>
     </div>
   );
 };
