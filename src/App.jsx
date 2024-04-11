@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import NavBar from './components/navBar';
 import MainContainer from './Containers/MainContainer';
 import MatrixContainer from './Containers/MatrixContainer'; // Make sure to import your new component
+import CheckButton from './components/CheckButton';
 
 const HomePage = () => {
   return (
@@ -15,6 +16,9 @@ const HomePage = () => {
         </Link>
         <Link to="/matrix">
           <button>Go to Matrix Visualization</button>
+        </Link>
+        <Link to="/serverTest">
+          <button>Go to Server Test</button>
         </Link>
       </div>
       <div>
@@ -37,6 +41,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/array" element={<MainContainer />} />
         <Route path="/matrix" element={<MatrixContainer />} />
+        <Route path="/serverTest" element={<CheckButton/>}/>
       </Routes>
     </Router>
   );
