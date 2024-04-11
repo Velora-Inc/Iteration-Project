@@ -25,8 +25,8 @@ const NavBar = () => {
       <div>
         <nav>
           <img src="src/assets/TLM-logo.png"></img>
-          <button onClick={() => navigateTo('previous')}>Previous</button>
-          <button onClick={() => navigateTo('next')}>Next</button>
+          {/* <button onClick={() => navigateTo('previous')}>Previous</button>
+          <button onClick={() => navigateTo('next')}>Next</button> */}
           <div className="userId">
             <span className="userIdText">Goblin Sharks</span>
             <img className="circle userPfp" src="src/assets/goblin-shark-pfp.jpg"></img>
