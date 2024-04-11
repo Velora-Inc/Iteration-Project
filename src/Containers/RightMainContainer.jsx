@@ -31,7 +31,6 @@ const RightMainContainer = (props) => {
       </div>
     );
     case 'custom' : 
-      // leave blank
       break;
     default:
       // should not happen

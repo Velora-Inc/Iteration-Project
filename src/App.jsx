@@ -7,6 +7,7 @@ import MatrixContainer from './Containers/MatrixContainer'; // Make sure to impo
 // import Button from './components/Button.jsx';
 import { Next, Previous } from './components/Button.jsx';
 import CheckBox from '@mui/material/Checkbox';
+import CheckButton from './components/CheckButton/index.jsx';
 //src/components/Button.jsx
 
 const HomePage = () => {
@@ -50,6 +51,7 @@ const App = () => {
         <Route path="/" element={<HomePage />} />
         <Route path="/array" element={<MainContainer />} />
         <Route path="/matrix" element={<MatrixContainer />} />
+        <Route path="/serverTest" element={<CheckButton/>}/>
       </Routes>
     </Router>
   );
