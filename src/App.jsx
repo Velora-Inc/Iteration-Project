@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import NavBar from './components/navBar';
 import MainContainer from './Containers/MainContainer';
 import MatrixContainer from './Containers/MatrixContainer'; // Make sure to import your new component
+import Button from './components/Button.jsx';
+
+//src/components/Button.jsx
 
 const HomePage = () => {
   return (
@@ -16,6 +19,8 @@ const HomePage = () => {
         <Link to="/matrix">
           <button>Go to Matrix Visualization</button>
         </Link>
+        <Button/>
+
       </div>
       <div>
       <br></br>
